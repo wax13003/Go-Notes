@@ -191,7 +191,6 @@ fmt package to Print out our values
     // Use \t to insert a tab
     // Use %+v to print the name and value
    ```
-
 Structs  
 A struct is a collection of fields, often called members (or attributes).
 * Defining A Struct
