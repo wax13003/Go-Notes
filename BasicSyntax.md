@@ -142,7 +142,7 @@ func main() {
 Typed
 If you try to use a typed constant with anything other than it's type, Go will throw a compile time error.
 
-```
+```go
 const (
 	leapYear = int32(366) // typed
 )
@@ -196,7 +196,7 @@ Structs
 A struct is a collection of fields, often called members (or attributes).
 * Defining A Struct
     * Structs may have zero or more fields.
-    ```
+    ```go
     type User struct {
         Name  string
         Email string
@@ -206,7 +206,7 @@ A struct is a collection of fields, often called members (or attributes).
     Without initial values:
     ```u := User{}```
     With initial values:
-    ```
+    ```go
     u := User{
 	    Name:  "Homer Simpson",
 	    Email: "homer@example.com",
@@ -218,13 +218,13 @@ A struct is a collection of fields, often called members (or attributes).
     you can instantiate and initialize a struct in one line, but bad practice as it can lead to future undesired refactoring.
 * Struct Tags
     * metadata attached to fields
-    ```
+    ```go
     type User struct {
         Name string `example:"name"`
     }   
     ```
     * 
-    ```
+    ```go 
     type User struct {
         ID       int    `json:"id"`
         Name     string `json:"name"`
@@ -245,6 +245,6 @@ A struct is a collection of fields, often called members (or attributes).
         }
     }
 
-    * special case of omitempty to state that we don't want the Phone field encoded if the value is empty, as well as the - to direct the encoder to never encode the Password field.
+    * special case of omitempty to state that we don not want the Phone field encoded if the value is empty, as well as the - to direct the encoder to never encode the Password field.
     ```
 

@@ -11,7 +11,7 @@ An array can only be of the type is was declared
 
 **Setting Array Values**  
 It is important to note that if you create two like arrays, and then set the value of one array to the other, they still continue to have their own memory space.
-```
+```go
 a1 := [2]string{"one", "two"}
 a2 := [2]string{}
 fmt.Println("a1:", a1)
@@ -31,7 +31,7 @@ a2: [one two]
 
 Two Dimensional Arrays
 Go's arrays are one-dimensional. To create an equivalent of a 2D array, it is necessary to define an array-of-arrays.
-```
+```go
 type Matrix [3][3]int
 m := Matrix{
     {0, 0, 0},
@@ -46,7 +46,7 @@ In Go there is only one looping construct; the **for** loop.
 Use it for **for, while, do while, do until,** etc...
 
 Iterating Over Arrays
-```
+```go
 func main() {
 	names := [4]string{"John", "Paul", "George", "Ringo"}
 
@@ -58,7 +58,7 @@ func main() {
 
 Continuing A Loop
 The **continue** keyword allows us to go back to the start of the loop and stop executing the rest of the code in the **for** block.
-```
+```go
 for {
   if i == 3 {
     // go to the start of the loop
@@ -69,7 +69,7 @@ for {
 ```
 Breaking A Loop
 To stop execution of a loop we can use the break keyword.
-```
+```go
 for {
   if i == 3 {
     // stop looping
@@ -83,14 +83,14 @@ Do While Loop
 A **do while** loop is used in a situation where you want the loop to run at least 1 iteration, regardless of the **condition**.
 
 Java-style:
-```
+```java
 do {
 	task();
 } while (condition);
 ```
 
 Go:
-```
+```go
 var i int
 for {
 	fmt.Println(i)
@@ -104,7 +104,7 @@ for {
 The **range** Keyword  
 Looping over arrays, and other collection types, is so common that Go created the range tool to simplify this code.
 
-```
+```go
 for i, n := range names {
     fmt.Printf("%d - %s\n", i, n)
 }
