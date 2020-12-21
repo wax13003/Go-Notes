@@ -180,7 +180,7 @@ Go's iota identifier is used in const declarations to simplify definitions of in
 Print
 fmt package to Print out our values
 * All Print statements can use verbs. 
-  * ```
+```
     // Use %v to print the value
     // Use %s to print a string
     // Use %q to quote a string
@@ -190,7 +190,7 @@ fmt package to Print out our values
     // Use \n to print a new line (line return)
     // Use \t to insert a tab
     // Use %+v to print the name and value
-   ```
+```
 Structs  
 A struct is a collection of fields, often called members (or attributes).
 * Defining A Struct
