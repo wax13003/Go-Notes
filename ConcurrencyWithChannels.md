@@ -307,3 +307,6 @@ c3 <- 1 // panic: send on a nil channel
 var c4 chan bool
 <-c4 // panic: read from a nil channel: all goroutines are asleep
 ```
+### Work Pools And Rate Limiting
+- [Worker Pools](https://gobyexample.com/worker-pools)
+- [Rate Limiting](https://gobyexample.com/rate-limiting)
